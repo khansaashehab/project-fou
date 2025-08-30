@@ -1,0 +1,289 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 ;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+.continer{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+
+/* --header-- */
+
+span{
+    font-size: 12px;
+    opacity: 0.1;
+    text-transform: uppercase;
+}
+header{
+    margin: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li{
+    display: inline-flex;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+button{
+    padding: 5px 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+.mobile {
+    display: none;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 60%;
+    list-style: none;
+}
+ .mobile a{
+    display: block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 5px;
+    color: black;
+}
+ .mobile a:hover {
+    background-color: black;
+    color: white;
+ }
+
+
+/* --background-- */
+/* --section one-- */
+
+.background-imge{
+    margin-top: 20px;
+    background-image: url(bw.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+}
+.content-back{
+   color: white;
+   max-width: 1000px;
+   margin: auto 10rem;
+
+}
+
+/* --content-- */
+/* section two */
+
+.content{
+    /* background-color: blue; */
+}
+
+.div-con{
+    max-width: 1000px;
+    /* background-color: blanchedalmond; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 2rem;
+    padding: 2rem;
+    margin:-70px auto 0 ;
+}
+.all4 , .all9{
+   margin-top: -90px;
+}
+
+.all5 , .all8{
+    margin-top: -150px;
+}
+
+.pra{
+    background-color: #d1e5f8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.pra::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 40px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #d1e5f8;
+}
+
+.one{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.one img{
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+
+/* --Footer --*/
+
+footer{
+    background-color: black;
+    color: white;
+}
+.all-foot{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin: auto;
+    padding: 10px ;
+    gap: 10px;
+}
+.all-con-foot{
+    /* background-color: rgb(21, 21, 20); */
+    padding: 10px;
+}
+.all-con-foot p{
+    opacity: 0.5;
+}
+
+.all-div{
+    margin-top: 30px;
+}
+
+.all-icon{
+    margin-top: 30px;
+}
+.all-icon i{
+    background-color: #eee;
+    color: black;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+
+/* -- media -- */
+
+@media(max-width:900px){
+        .all {
+            width: 40%;
+        }
+
+    .all-foot {
+            flex-direction: column;
+    }
+
+    .content-back {
+        color: white;
+        /* max-width: 500px; */
+        margin: auto 2rem;
+    
+    }
+}
+
+ @media(max-width:768px){
+    ul li {
+            display: none;
+        }
+    
+    .mobile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+
+    .all-foot {
+             flex-direction: column;
+    }
+    
+    .content-back {
+             color: white;
+             /* max-width: 500px; */
+             margin: auto 2rem;
+    
+        }
+
+    .div-con {
+            grid-template-columns: 1fr;
+             padding: 1rem;
+    }
+
+    /* .continer {
+            max-width: 100%;
+             margin: auto;
+    } */
+
+ }
+@media(max-width:500px){
+    ul li{
+        display: none;
+    }
+    .mobile{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    }
+
+    .div-con {
+            /* width: 500px; */
+            grid-template-columns: 1fr;
+            padding: 1rem;
+    }
+
+    .all{
+            width: 100%;
+    }
+
+    .all-foot{
+            flex-direction: column;
+    }
+
+    .content-back {
+            color: white;
+             /* max-width: 500px; */
+            margin: auto 2rem;
+                
+    }
+    .all4,
+    .all9 {
+            margin-top: 0;
+    }
+                                
+    .all5,
+    .all8 {
+            margin-top: 0;
+    }
+
+.background-imge {
+    width: 100%;
+    margin:    auto;
+}
+
+.continer {
+    width: 900%;
+    margin: auto;
+}
+}
